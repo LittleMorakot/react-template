@@ -38,12 +38,6 @@ module.exports = {
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
                     'file-loader',
-                    {
-                    loader: 'image-webpack-loader',
-                    options: {
-                        disable: true,
-                        },
-                    },
                 ],
             },
             {
@@ -61,5 +55,5 @@ module.exports = {
         hints: false
     },
 
-    devtool: 'cheap-module-inline-source-map',
+    devtool: 'inline-cheap-module-source-map',
 }
